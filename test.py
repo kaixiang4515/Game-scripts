@@ -39,6 +39,14 @@ for pos in pyautogui.locateAllOnScreen('./ScreenShots/test.png', grayscale=True)
     print(pos)
 '''
 
+'''
 pos = pyautogui.locateOnScreen('./ScreenShots/clock.png')
 print(pos)
-
+'''
+'''
+t1 = time.time()
+time.sleep(0.2)
+t2 = time.time()
+print(t2-t1)
+'''
+pydirectinput.press('1')
