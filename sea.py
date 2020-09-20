@@ -36,6 +36,10 @@ def buff(t = 1):
             time.sleep(2)
             pydirectinput.press('0')
             time.sleep(1)
+            pydirectinput.press('ctrl')
+            time.sleep(1)
+            pydirectinput.press('j')
+            time.sleep(1)
             t_180 = tn
         if tn - t_120 >= 120:
             pydirectinput.press('6')
@@ -57,7 +61,7 @@ def buff(t = 1):
             t_90 = tn
 
 def move(t = 1, d = 'right'):
-    if t == 1 : key = 'ctrl' #順移
+    if t == 1 : key = 'alt' #順移
     elif t == 2 : key = 'space' #二段跳
     elif t == 3 : key = d #兩下方向鍵
 
@@ -192,7 +196,7 @@ def attack1(): #夜光
 
 if __name__ == "__main__":
     
-    tj = 2
+    tj = 1
     if tj == 1 : Attack = attack1
     elif tj == 2 : Attack = attack2
 
