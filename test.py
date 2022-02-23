@@ -5,7 +5,7 @@ import time
 
 screenWidth, screenHeight = pydirectinput.size() # Get the size of the primary monitor.
 currentMouseX, currentMouseY = pydirectinput.position() # Get the XY position of the mouse.
-#print(screenWidth,screenHeight,currentMouseX,currentMouseY)
+print(screenWidth,screenHeight,currentMouseX,currentMouseY)
 '''
 ox , oy = pydirectinput.position()
 while 1:
